@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .typing-text{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <pre class="typing-text">
+    
+  </pre>
+
+  <script>
+    const typingtext = document.querySelector('.typing-text');
+
+    const message =  `<h1> Welcome to Ernest Portfolio</h1>
+    <p> im a <span style="color:green">frontend developer</span> with a passion for
+    clean design and performance</p>`;
+    let index = 0;
+    function typeloop(){
+      typingtext.innerHTML = message.substring(0,index);
+      index ++;
+      if(index > message.length){
+        index = 0;
+        setTimeout(typeloop, 1200);
+      }else{
+        setTimeout(typeloop, 80)
+      }
+    }
+
+      typeloop()
+  </script>
+</body>
+</html>

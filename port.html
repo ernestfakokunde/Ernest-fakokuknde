@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="port.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Ernest Fakokunde</title>
+</head>
+<body>
+ 
+  <header class="header">
+    <div class="head">
+
+      <div class="circle"></div>
+      <div class="name">Ayodelefaks.dev</div>
+
+      <div class="links">
+        <a href="#">About</a>
+        <a href="#">projects</a>
+        <a href="#">Codebase</a>
+        <a href="#">Blogs</a>
+      </div>
+    </div>
+    <div class="head-links"> 
+       <a href="#"><i class="fab fa-github"></i></a>
+      <a href=""><i class="fab fa-linkedin"></i></a>
+      <a href=""><i class="fab fa-twitter"></i></a>
+     
+    </div>
+    <div class="contact">
+      <button class="cta">Copy Email</button>
+    </div>
+  </header>
+  
+
+<section class="body-section">
+  <div class="flex-container">
+    <div class="body-container">
+      <h2> i'm a software Engineer that always <span class="head-text"></span></h2>
+
+       <div class="body-text">
+        <p>Meet Ernest fakokunde the self proclaimed code wizard who can turn caffein into
+          beautiful websites. His passion for building clean and functional designs is only
+          rivaled by his passion for finding the perfect Gif to express his excitement.
+        </p>
+
+        <p class="abt"> Building and Creating <span class="Best"> Best designs</span> when im not working on my day job.</p>
+       </div>
+    </div>
+
+    <div class="body-2-container">
+      <div class="typing-text"> </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="Work-section">
+    <h2>Work Experience</h2>
+    <p>Improved website performance and SEO, resulting in a 30% increase in user engagement.</p>
+
+    <div class="grid-work-items">
+      <div class="grid-items">
+        <i class="fab fa-google"> --- Google</i>
+      </div>
+      <div class="grid-items">
+        ✅ worked on some google devops freelance projects
+      </div>
+
+        <div class="grid-items">
+        <i class="fab fa-js-square"> ---j script</i>
+      </div>
+      <div class="grid-items">
+        ✅ worked on javascript projects including a logistics landing page
+      </div>
+
+       <div class="grid-items">
+        <i class="fab fa-css3-alt"> ---C-S-S-3</i>
+      </div>
+      <div class="grid-items">
+        ✅ Worked and Expert in Responsive designs and mobile friendly designs
+      </div>
+      
+    </div>
+
+  </section>
+
+  <section class="projects">
+
+    <h2>I have been building a lot of things</h2>
+
+    <div class="projects-container">
+      <div class="projects-cards">
+        <div class="products-img">
+          <img src="images/33.png" alt="img">
+        </div>
+
+        <div class="products-header">
+          <h2>Zen autos</h2>
+        </div>
+        <div class="about-products">
+          A land page for logistics and delivery company. made with
+          html css and javascript
+        </div>
+
+        <div class="products-links">
+          <a href="#" title="HTML5"><i class="fab fa-html5" style="color:#e44d26;"></i></a>
+          <a href="#" title="CSS3"><i class="fab fa-css3-alt" style="color:#2965f1;"></i></a>
+          <a href="#" title="JavaScript"><i class="fab fa-js-square" style="color:#f7df1e;"></i></a>
+          <a href="#" title="Vanilla JS"><i class="fab fa-js" style="color:#f7df1e;"></i></a>
+           
+        </div>
+        <div class="view">
+          <a href="#"> <i class="fas fa-clock" style="font-size:12px;color:grey;"> </i>View source</a>
+        </div>
+      </div>
+
+       <div class="projects-cards"> 
+        <div class="products-img">
+          <img src="images/34.png" alt="img">
+        </div>
+
+        <div class="products-header">
+          <h2>Swift Drop.ui</h2>
+        </div>
+        <div class="about-products">
+          A land page for logistics and transport company. integrated to mobile friendly.
+        </div>
+
+        <div class="products-links">
+          <a href="#" title="HTML5"><i class="fab fa-html5" style="color:#e44d26;"></i></a>
+          <a href="#" title="CSS3"><i class="fab fa-css3-alt" style="color:#2965f1;"></i></a>
+          <a href="#" title="JavaScript"><i class="fab fa-js-square" style="color:#f7df1e;"></i></a>
+          <a href="#" title="Vanilla JS"><i class="fab fa-js" style="color:#f7df1e;"></i></a>
+           
+        </div>
+        <div class="view">
+          <a href="#"> <i class="fas fa-clock" style="font-size:12px;color:grey;"> </i>View source</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <script>
+
+    const btn = document.querySelector('.cta');
+    const copyEmail = () => {
+      const Email = 'ernestfakokunde9@gmail.com';
+      navigator.clipboard.writeText(Email).then(() => {
+        btn.textContent = "Copied";
+        setTimeout(() => {
+          btn.textContent = "Copy Email";
+        }, 3000);
+      }).catch(err => {
+        console.log('Failed to copy Email');
+      });
+    };
+    btn.addEventListener("click", copyEmail);
+  
+  const typingText = document.querySelector('.typing-text');
+  const message =
+  `<h3 class = "txt">Welcome to My Portfolio</h1>
+
+  <p> i'm Ernest Fakokunde, 
+  <span class="dev">A full stack Developer</span> With a
+   passion for clean design and
+   Performance.
+   <br>
+   i specialize in <span class="frames"> HTML,CSS, Javascript</span>
+   and other <span class="frames">frameworks</span> . 
+   I have a solid stand in javascript.
+    <br>
+   i'm Also an Expert in Bulding
+   designs from scratch.
+   i build intiutive and mobile 
+   friendly designs.
+   <br><br>
+   Nice To meet you </p>`;
+
+   let index = 0;
+
+   function typeloop(){
+    typingText.innerHTML = message.substring(0,index)
+    index ++;
+    if( index > message.length){
+      index = 0;
+      setTimeout(typeloop,2000)
+    }else{
+      setTimeout(typeloop,30)
+    }
+   }
+   typeloop();
+
+   const headtext = document.querySelector('.head-text');
+
+   let headText = "Writes Codes";
+   let Headindex = 0
+
+   function headtypeloop(){
+    headtext.innerHTML = headText.substring(0,Headindex);
+     Headindex ++;
+    if(Headindex > headText.length){
+      Headindex = 0;
+      setTimeout(headtypeloop,1000)
+    }else{
+      setTimeout(headtypeloop, 200)
+    }
+   }
+
+   headtypeloop();
+
+  </script>
+</body>
+</html>
