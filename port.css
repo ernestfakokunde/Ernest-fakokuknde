@@ -37,6 +37,12 @@ header{
   padding-right: 20px;
    
 }
+.abt{
+  color: greenyellow;
+}
+.best{
+  color: greenyellow;
+}
 .head-links{
   display: flex;
   gap: 20px;
@@ -107,6 +113,9 @@ header{
   align-items: center;
   border-radius: 10px;
   
+}
+.head-links{
+  display: none;
 }
 .links a{
   display: none;
