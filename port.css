@@ -291,6 +291,11 @@ header{
     padding-left: 25px;
   }
 }
+@media(max-width: 400px){
+  .projects{
+    padding-left: 8px;
+  }
+}
 .projects h2{
   margin-bottom: 30px;
 }
