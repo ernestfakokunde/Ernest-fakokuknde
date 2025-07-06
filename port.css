@@ -335,6 +335,11 @@ background-color: rgb(19, 14, 14);
    flex-wrap: wrap;
    margin-left: 50px;
 }
+@media(max-width: 768px){
+  .projects-container{
+    margin-left: 10px;
+  }
+}
  
 .products-header{
   margin-top: 20px;
