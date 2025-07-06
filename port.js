@@ -49,7 +49,7 @@
 
    const headtext = document.querySelector('.head-text');
 
-   let headText = "Writes Codes";
+   let headText = " Codes";
    let Headindex = 0
 
    function headtypeloop(){

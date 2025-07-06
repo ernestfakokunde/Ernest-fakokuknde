@@ -375,7 +375,7 @@ background-color: rgb(19, 14, 14);
   background-color: rgb(28, 13, 44) ;
   padding: 20px 20px;
   justify-content:  flex-start;
-  gap: 50px;
+  gap: 60px;
   align-items: start;
   flex-wrap: wrap;
   color: white;
@@ -506,4 +506,35 @@ background-color: rgb(19, 14, 14);
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+}
+.footer{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 18px;
+  gap: 10px;
+}
+.footer-links{
+  color: blue;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-links a{
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+.footer-social-links{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 24px;
+}
+.footer-social-links a{
+  color: purple;
+  text-decoration: none;
 }
