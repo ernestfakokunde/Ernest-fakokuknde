@@ -479,6 +479,20 @@ background-color: rgb(19, 14, 14);
   color: white;
   transform: scale(1.05,1.05);
 }
+.ctb{
+  background: white;
+  padding: 9px;
+  border-radius: 8px;
+  background: none;
+  color:purple;
+  border: 1px solid purple;
+  transition: 0.3s;
+}
+.ctb:hover{
+  background: purple;
+  color: white;
+  transform: scale(1.05,1.05);
+}
 
 .contact-form{
   display: flex;

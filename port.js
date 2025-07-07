@@ -12,6 +12,21 @@
       });
     };
     btn.addEventListener("click", copyEmail);
+
+    const cbtn = document.querySelector('.ctb');
+    const copyEmail2 = () => {
+      const Email = "ernestfakokunde9@gmail.com";
+      navigator.clipboard.writeText(Email).then(() => {
+        cbtn.textContent = "Copied";
+        setTimeout(() => {
+          cbtn.textContent = "Copy Email";
+        }, 3000);
+      }).catch(err => {
+        console.log('Failed to copy Email');
+      });
+    };
+
+    cbtn.addEventListener("click", copyEmail2);
   
   const typingText = document.querySelector('.typing-text');
   const message =
