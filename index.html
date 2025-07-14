@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>Ernest Fakokunde</title>
 </head>
+<style>
+  .outputpage{
+    display: none;
+  }
+  </style>
 <body>
  
   <header class="header">
@@ -224,6 +229,7 @@
       </div>
 
       <div class="contact-form">
+        <form id="ctn-form">
 
         <h3> im interested in....</h3>
 
@@ -236,17 +242,28 @@
         </div>
 
         <div class="input-field">
-          <input type="text" placeholder="Your-name">
-          <input type="email" placeholder="Enter email">
-          <input type="text" class="msg" placeholder="Write Your message">
+          <input type="text" placeholder="Your-name" class="inputname">
+          <input type="email" placeholder="Enter email" class="inputemail">
+          <input type="text" placeholder="Write Your message" class="inputmsg">
         </div>
 
         <div class="input-send">
-          <button class="send">  <i class="fab fa-telegram"></i> Send Message</button>
+          <button class="send" type ="submit">  <i class="fab fa-telegram"></i> Send Message</button>
         </div>
 
-       
+       </form>
+        <div class="outputpage">
+          <div class="outputpage">
+  <div class="spinner" style="display:none;">
+    <svg xmlns="http://www.w3.org/2000/svg" style="margin:auto; background:none; display:block;" width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+      <circle cx="50" cy="50" fill="none" stroke="#800080" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138">
+        <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="0.9s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+      </circle>
+    </svg>
+  </div>
+</div>
 
+        </div>
       </div>
     </div>
 

@@ -409,6 +409,14 @@ background-color: rgb(19, 14, 14);
   }
 }
 
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+
 .contact-element{
     width:300px ;
    height: 100%;
@@ -503,6 +511,8 @@ background-color: rgb(19, 14, 14);
   color: purple;
   border-radius: 10px;
   margin-top: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .input-field{
@@ -566,4 +576,17 @@ background-color: rgb(19, 14, 14);
 .footer-social-links a{
   color: purple;
   text-decoration: none;
+}
+.outputpage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.check{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

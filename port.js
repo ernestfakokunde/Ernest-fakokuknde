@@ -80,4 +80,68 @@
 
    headtypeloop();
 
+   //Fuction to get user input and send to database or local database
+   //Note not real url is used to store the user info for now
+   // This is just a simulation of how it works
+   const spinner = document.querySelector(".spinner")
+   const form = document.getElementById('ctn-form');
+    let output = document.querySelector(".outputpage");
+
+   form.addEventListener("submit", async (event)=>{
+    event.preventDefault();
+//now lets get all user inputs from the form
+    const name = document.querySelector(".inputname").value;
+    const email = document.querySelector(".inputemail").value;
+    const message = document.querySelector(".inputmsg").value;
+
+    //We have to create an object like json format to convert it
+    //and be able to send to the server or database
+    //Note no real api is used
+    //just for simulation
+
+    let myform = {
+      name : name,
+      email: email,
+      message: message
+    }
+
+    let url = "https://jsonplaceholder.typicode.com/posts"
+    //note for simulation only
+
+    //we have to use the try and catch to look for errors and resolve
+    if(name === "" || email === "" || message===""){
+      alert("Error : Must fill all fields");
+      return;
+    }
+    //show the spinner while the request is being processed
+    spinner.style.display = "flex";
+    output.style.display = "block";
+    output.innerHTML= "";
+    output.appendChild(spinner);
+    try{
+      let response = await fetch(url,{
+        method: "POST",
+        headers:{
+          "Content-type": "application/json"
+        },
+        body: JSON.stringify(myform)
+      });
+
+      let finalPost = await response.json()
+      console.log(finalPost)
+
+     spinner.style.display = "none";
+      //now we can show the output to the user
+      output.innerHTML = `
+      <div> <svg class="check" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#18333C"><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg> </div>
+      <p>Hello Your request has been received succesfully.</p>`;
+      // Hide the form and show only the output
+      form.style.display = "none";
+      output.style.display = "block";
+    } catch(error){
+      console.log("Error: ",error )
+    }
+    form.reset();
+   });
+
   
