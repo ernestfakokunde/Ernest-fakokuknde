@@ -139,7 +139,9 @@
       form.style.display = "none";
       output.style.display = "block";
     } catch(error){
-      console.log("Error: ",error )
+      console.log("Error: ",error );
+      spinner.style.display= "none";
+      output.innerHTML = `<p>hello try again something went wrong</p>`
     }
     form.reset();
    });
