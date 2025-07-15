@@ -3,9 +3,9 @@
     const copyEmail = () => {
       const Email = 'ernestfakokunde9@gmail.com';
       navigator.clipboard.writeText(Email).then(() => {
-        btn.textContent = "Copied";
+        btn.textContent = "wait a second";
         setTimeout(() => {
-          btn.textContent = "Copy Email";
+          btn.textContent = "send a mail";
         }, 3000);
       }).catch(err => {
         console.log('Failed to copy Email');
@@ -17,9 +17,9 @@
     const copyEmail2 = () => {
       const Email = "ernestfakokunde9@gmail.com";
       navigator.clipboard.writeText(Email).then(() => {
-        cbtn.textContent = "Copied";
+        cbtn.textContent = "wait a second";
         setTimeout(() => {
-          cbtn.textContent = "Copy Email";
+          cbtn.textContent = "send an email";
         }, 3000);
       }).catch(err => {
         console.log('Failed to copy Email');
@@ -72,9 +72,9 @@
      Headindex ++;
     if(Headindex > headText.length){
       Headindex = 0;
-      setTimeout(headtypeloop,1000)
+      setTimeout(headtypeloop,800)
     }else{
-      setTimeout(headtypeloop, 200)
+      setTimeout(headtypeloop, 500)
     }
    }
 
