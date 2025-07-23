@@ -142,7 +142,7 @@
     } catch(error){
       console.log("Error: ",error );
       spinner.style.display= "none";
-      output.innerHTML = `<p>Failed to Send messageCheck your network connection</p>`
+      output.innerHTML = `<p>Failed to Send Check your internet Connection and try again</p>`
     }
     form.reset();
    });
